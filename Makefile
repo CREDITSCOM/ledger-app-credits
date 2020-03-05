@@ -25,7 +25,7 @@ include $(BOLOS_SDK)/Makefile.defines
 #########
 
 APPNAME    = Credits
-ICONNAME   = nanos_app_credits.gif
+ICONNAME   = csp.gif
 APPVERSION = 0.1.0
 
 # The --path argument here restricts which BIP32 paths the app is allowed to derive.
