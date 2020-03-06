@@ -2,11 +2,11 @@
 #define CREDITS_CREDITS_H
 
 // exception codes
-#define CS_DEVELOPER_ERR 0x6B00
-#define CS_INVALID_PARAM 0x6B01
-#define CS_IMPROPER_INIT 0x6B02
-#define CS_USER_REJECTED 0x6985
-#define CS_OK            0x9000
+#define SW_DEVELOPER_ERR 0x6B00
+#define SW_INVALID_PARAM 0x6B01
+#define SW_IMPROPER_INIT 0x6B02
+#define SW_USER_REJECTED 0x6985
+#define SW_OK            0x9000
 
 // macros for converting raw bytes to uint64_t
 #define U8BE(buf, off) (((uint64_t)(U4BE(buf, off))     << 32) | ((uint64_t)(U4BE(buf, off + 4)) & 0xFFFFFFFF))

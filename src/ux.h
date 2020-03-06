@@ -6,12 +6,10 @@
 
 typedef struct {
 	uint32_t keyIndex;
-	bool genAddr;
 	uint8_t displayIndex;
 	// NUL-terminated strings for display
-	uint8_t typeStr[40]; // variable-length
 	uint8_t keyStr[40]; // variable-length
-	uint8_t fullStr[77]; // variable length
+	uint8_t fullStr[65];
 	// partialStr contains 12 characters of a longer string. This allows text
 	// to be scrolled.
 	uint8_t partialStr[13];
