@@ -73,9 +73,9 @@ handler_fn_t handleGetPublicKey;
 
 static handler_fn_t* lookupHandler(uint8_t ins) {
 	switch (ins) {
-    case INS_GET_VERSION:    return handleGetVersion;
-    case INS_SIGN_HASH:      return handleSignHash;
-    case INS_GET_PUBLIC_KEY: return handleGetPublicKey;
+	case INS_GET_VERSION:    return handleGetVersion;
+	case INS_SIGN_HASH:      return handleSignHash;
+	case INS_GET_PUBLIC_KEY: return handleGetPublicKey;
 	default:                 return NULL;
 	}
 }
